@@ -1,6 +1,8 @@
-﻿namespace InventoryManagement
+﻿using System.Windows.Forms;
+
+namespace InventoryManagement
 {
-    partial class Form1
+    partial class MainScreen : Form
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +31,28 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.SuspendLayout();
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(1274, 601);
+            this.Name = "Main Screen";
+            this.Text = "Main Screen";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
 
