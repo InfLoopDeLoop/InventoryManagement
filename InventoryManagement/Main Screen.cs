@@ -17,14 +17,15 @@ namespace InventoryManagement
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void AddPartsButton_Click(object sender, EventArgs e)
         {
-
+            AddPart addPart = new AddPart();
+            addPart.ShowDialog();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void ExitButton_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }
